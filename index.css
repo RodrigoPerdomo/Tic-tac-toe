@@ -1,0 +1,84 @@
+body{
+    color:white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #1D976C; 
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  
+    background: linear-gradient(to right, #93F9B9, #1D976C);
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+}
+main{
+    text-align: center;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: auto;
+    margin-bottom: 10px;
+    width:400px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+form button{
+    width:400px;
+    margin: auto;
+    height: 30px;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    background-color: black; 
+}
+.juego{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.juego div{
+    border:2px solid black;
+    height: 150px;
+}
+.juego div:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#reseteo{
+    width:400px;
+    margin: auto;
+    height: 30px;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    background-color: black; 
+}
+#reseteo:hover{
+    cursor: pointer;
+}
+.letra{
+    font-size: 30px;
+    color: green;  
+}
+@media screen and (max-width:410px){
+    form input{
+        width:350px;
+    }
+    form button{
+        width:350px;
+    }
+    .juego{
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 150px;
+    }
+    #reseteo{
+        width:350px;
+    }
+}
